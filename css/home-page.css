@@ -1,0 +1,553 @@
+:root{
+    --bg:linear-gradient(#141e30, #243b55);
+    --color:rgb(207, 207, 207);
+    --width:52.55%;
+    --row:10%;
+
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:"Lato", sans-serif;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.center{
+    align-items: center;
+}
+.v-center{
+    justify-content: space-between;
+
+}
+.stylenone{
+    list-style-type: none;
+}
+.underline{
+    border-bottom: 1px solid rgb(169, 166, 166);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.md-under{
+    padding-top: 10px;
+}
+/*start header*/
+body{
+    background-image:url("https://cdn.dribbble.com/users/38298/screenshots/1779032/media/7edbe49214df7b9abf9384b1e6cb74b0.jpg?compress=1&resize=800x600&vertical=top") ;
+}
+.navbar{
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top:0;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.navbar a{
+    display: block;
+    color: black;
+    padding: 17px 30px;
+}
+a.home-main{
+    border-bottom-style: groove;
+} 
+/*
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(234, 232, 232);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--color) transparent;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+} */
+.navbar .logo{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight:900;
+    background-color: #3dadee;
+    animation: uploadImage 5s infinite;
+    padding: 15px 60px;
+    cursor: pointer;
+}
+.navbar a:hover{
+    animation: uploadImage 2s infinite;
+}
+.navbar a:hover .fa{
+    animation: hover-icon 2s infinite;
+}
+/*end nav*/
+
+/*start section*/
+aside > div{
+    position: fixed;
+    width: calc((100% - var(--width)) / 2 - 2%);
+    height: 92.55%;
+    overflow-y: scroll;
+    background-color: white;
+    bottom: 0;
+}
+aside div:first-child{
+    left: 0%;
+}
+aside div:last-child{
+    right: 0%;
+}
+.fuction a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    padding: 16px 30px;
+    border-radius: 12px 0px 0px 12px;
+    margin-left: 12px;
+}
+.fuction .introduce{
+    font-size: 18px;
+    padding: 5px;
+    
+}
+.fuction .fa{
+    font-size: 18px;
+    padding-right: 20px;   
+}
+.fuction a:hover{
+    animation: uploadImage 2s infinite;
+}
+@keyframes hover-icon{
+    0% {transform:rotate(20deg) ;}
+    15% {transform:rotate(40deg) ;}
+    30% {transform:rotate(-20deg) ;}
+    45% {transform:rotate(-40deg) ;}
+    70% {transform:rotate(20deg) ;}
+    85% {transform:rotate(40deg) ;}
+    100% {transform:rotate(-20deg) ;}
+}
+.under{
+    border-bottom: 1px var(--color) solid;
+}
+.group .title{
+    padding: 15px 0px 5px 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.group ul li{
+    vertical-align: middle; 
+}
+.group img{
+    width: 50px;
+    border-radius: 50%;
+}
+.online .icons {
+    padding: 10px 15px 25px;
+}
+.online .icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+.online .icon img{
+    width: 50px;
+    display: block;
+    transition: linear 0.5s;
+    opacity: 0.7;
+}
+.online .icon a {
+    display: block;
+}
+.online .icon a:hover img{
+    transform: rotateY(180deg);
+    opacity: 1;
+
+}
+.online .by{
+    font-size: 18px;
+    opacity: 0.6;
+    font-weight: bold;
+    color: #333;
+    padding: 15px;
+    list-style-type: none;  
+}
+.add-friend:hover{
+    background-color: var(--color);
+}
+.add-friend:hover{
+    animation: uploadImage 2s infinite;
+}
+.adds-friend{
+    margin-bottom: 10px;
+}
+.add-friend{
+    border-radius: 20px 0px 0px 20px;
+    padding: 8px 5px;
+    margin-left: 10px;
+}
+.add-friend img{
+    width: 60px;
+    border-radius: 50%;
+}
+.add-friend .avt{
+    padding: 5px 20px 5px 5px;
+}
+.add-friend .info h4{
+    font-size: 18px;
+    padding-top: 5px;
+}
+.add-friend .info p{
+    font-size: 12px;
+    opacity: 0.8;
+    color: #333;
+    margin-bottom: 10px;
+}
+.add-friend .info button{
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.add-friend .info a{
+    font-weight: bold;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.add-friend .info .yes{
+    background-color:#3dadee;;
+    border-radius:5px;
+    border: none;
+    opacity: 0.8;
+}
+.add-friend .info .no{
+    border: none;
+    background-color: rgb(241, 10, 10);
+    border-radius: 5px;
+    opacity: 0.8;
+}
+.add-friend .info button:hover{
+    opacity: 1;
+}
+
+.untifis{
+    margin-bottom: 10px;
+    
+}
+.untifis a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.untifis .untifi{
+    padding: 15px 10px 5px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 10px;
+}
+.untifis .untifi:hover{
+    background-color: var(--color);
+}
+
+.untifis .untifi:hover{
+    animation: uploadImage 2s infinite;
+}
+@keyframes hover-icon{
+    0% {transform:rotate(20deg) ;}
+    15% {transform:rotate(40deg) ;}
+    30% {transform:rotate(-20deg) ;}
+    45% {transform:rotate(-40deg) ;}
+    70% {transform:rotate(20deg) ;}
+    85% {transform:rotate(40deg) ;}
+    100% {transform:rotate(-20deg) ;}
+}
+.untifi img{
+    width: 40px;
+    margin-right: 10px;
+}
+.untifi span{
+    font-weight: bold;
+}
+.works .icon{
+    float: right;
+}
+
+/*start section*/
+.news{
+    margin: 20px;
+    padding: 2%;
+    background-color: var(--color);
+    height: auto;
+    width: var(--width);
+    margin: 0 auto;
+    border-radius:10px;
+    margin-top: 15px;
+    box-shadow: 1px 1px 5px 2px rgb(234, 232, 232);
+}
+.news .new.think{
+    margin-top: 25px;
+}
+.new .avt{
+    margin-bottom: 10px;
+}
+.new.think .avt img{
+    width: 30px;
+    border-radius:50%;
+    margin-right: 10px;
+}
+.new.think .avt input{
+    width: 85%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+.new .thinksup{
+    padding: 15px 20px 0px;
+    border-top: 1px solid rgb(169, 166, 166);
+}
+.thinksup .fuction-think a{
+    text-decoration: none;
+    color: black;
+}
+.thinksup .fuction-think button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color);
+    transition: 0.5s;
+    font-size: 16px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.thinksup .fuction-think .fa{
+    margin:0px 10px;
+}
+.thinksup .fuction-think button:hover{
+    background-color: rgb(234, 232, 232);
+    box-shadow: -2px -2px  5px #AAA;
+}
+.news .newsub img{
+    width: 25px;
+    border-radius:50%;
+    margin-right: 5px;
+}
+
+.newsub ul > li{
+    padding-left:20px ;    
+}
+.newsub ul > li button{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.newsub ul > li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.news .newcontent{
+    margin-top: 5px;
+}
+.news .newcontent p{
+    text-align: left;
+}
+.news .newcontent img{
+    width: 100%;
+    margin-top: 10px;
+    height: 500px;
+    transition: 0.3;
+    cursor: pointer;
+}
+.likes .countlike img{
+    width: 20px;
+}
+.likes .like li:first-child{
+    padding-right: 10px;
+}
+.likes a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+.likes a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.likes p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.count-comment ul{
+    padding: 10px 0px 0px;
+}
+.count-comment ul > li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.count-comment ul > li a:hover{
+    text-decoration: underline;
+}
+.count-comment .choose{
+    border: none;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.comment .write-comment input{
+    width: 85%;
+    padding: 5px 2px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px -5px;
+}
+
+.modal{
+    position: fixed; /*lop phu*/
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal .modal-container{
+    width: 500px;
+    height: 400px;
+    min-height: 300px;
+    background-color: rgb(246, 239, 239);
+    margin: 0 auto;
+    margin-top: 8%;
+    border-radius: 0px 0px 20px 20px;
+    animation: modalFadein ease .5s;
+    position: relative;
+}
+.modal-container .md-header h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+.md-header .del{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    padding: 10px 15px;
+    cursor: pointer; 
+    font-size: 12px;  
+}
+.md-header .del:hover{
+    background-color: red;
+    color: white;
+}
+.md-body{
+    padding-top: 10px;
+}
+.md-body .thinksub{
+    width: 94%;
+    border: none;
+    font-size: 18px;
+    padding-left: 5px;
+    background-color: rgb(246, 239, 239);
+    height: 70px;
+}
+.md-body #display-image{
+    width: 99.8%;
+    height: 223px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+}
+.md-footer{
+    background-color: #3dadee;;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 3px;
+    border-radius: 0px 0px 20px 20px;
+    cursor: pointer;
+    color: black;
+    text-shadow: 5px 2px 8px white ;
+    border: none;
+    animation: uploadImage 2s infinite;
+}
+@keyframes modalFadein {
+    from {
+        opacity: 0;
+        transform:translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes uploadImage{
+    0% {background-color: rgb(161, 161, 246); color: black;}
+    25% {background-color: rgb(132, 132, 248);color: bisque;}
+    50% {background-color: rgb(88, 88, 250);color:burlywood;}
+    100% {background-color: rgb(43, 43, 249);color: white;}
+}
+
+.modal-container.list{
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+.modal-like .amount-like{
+   margin: 0 auto;  
+   padding-top: 5px;
+   cursor: pointer;
+}
+.modal-like .amount-like:hover{
+    color: white;
+    background-color: #3dadee;
+}
+.modal-like-list{
+    padding: 10px;
+}
+.modal-like-list .avt{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.modal-like-list .mutual{
+    font-size: 14px;
+    opacity: 0.7;
+}
+.modal-like-list .like{
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
